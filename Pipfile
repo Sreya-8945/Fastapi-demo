@@ -10,6 +10,7 @@ passlib = "*"
 tortoise = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 aiofiles = "*"
+uvicorn="*"
 
 [dev-packages]
 
