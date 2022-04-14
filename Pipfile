@@ -12,6 +12,7 @@ python-jose = {extras = ["cryptography"], version = "*"}
 aiofiles = "*"
 uvicorn="*"
 gunicorn = "*"
+fastapi = "*"
 
 [dev-packages]
 
