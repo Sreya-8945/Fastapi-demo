@@ -11,6 +11,7 @@ tortoise = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 aiofiles = "*"
 uvicorn="*"
+gunicorn = "*"
 
 [dev-packages]
 
