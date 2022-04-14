@@ -13,6 +13,8 @@ aiofiles = "*"
 uvicorn="*"
 gunicorn = "*"
 fastapi = "*"
+pymysql = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 
