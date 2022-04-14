@@ -10,11 +10,11 @@ passlib = "*"
 tortoise = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 aiofiles = "*"
-uvicorn = "*"
+uvicorn = "==0.17.5"
 gunicorn = "*"
-fastapi = "*"
+fastapi = "==0.75.0"
 pymysql = "*"
-sqlalchemy = "*"
+sqlalchemy = "==1.4.32"
 
 [dev-packages]
 
