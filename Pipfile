@@ -10,7 +10,7 @@ passlib = "*"
 tortoise = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 aiofiles = "*"
-uvicorn="*"
+uvicorn = "*"
 gunicorn = "*"
 fastapi = "*"
 pymysql = "*"
