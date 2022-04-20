@@ -15,6 +15,7 @@ gunicorn = "*"
 fastapi = "==0.75.0"
 pymysql = "*"
 sqlalchemy = "==1.4.32"
+hypercorn = {extras = ["trio"], version = "*"}
 
 [dev-packages]
 

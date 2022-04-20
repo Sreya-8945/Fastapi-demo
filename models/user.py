@@ -3,11 +3,6 @@ from sqlalchemy import Table,Column,ForeignKey
 from config.db import meta,engine
 from sqlalchemy.sql.sqltypes import Integer,String
 
-# login = Table(
-#     'login',meta,
-#     Column('email',String(255)),
-#     Column('password',String(255))    
-# )
 
 users = Table(
     'users',meta,
@@ -17,14 +12,6 @@ users = Table(
     Column('password',String(255)),
     Column('user_img',String(255))
 )
-
-# profiles = Table(
-#     'profiles',meta,
-#     # Column('id',Integer,primary_key=True),
-#     Column('Name',String(255)),
-#     Column('Email',String(50)),
-#     # Column('Profile_img',String(255))
-# )
 
 products = Table(
     'products',meta,

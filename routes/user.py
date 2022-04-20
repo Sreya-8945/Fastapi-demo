@@ -1,20 +1,16 @@
-# import jwt
+
 from asyncore import write
 from math import prod
-# import os,uuid,aiofiles,shutil
 
-from fastapi import APIRouter,Response,UploadFile,File,Depends,HTTPException,status,Form
+from fastapi import APIRouter,Response,UploadFile,File,Depends,status,Form
 # from fastapi.security import OAuth2PasswordBearer,OAuth2PasswordRequestForm
 from typing import List,Callable
-# from pathlib import Path
-from tempfile import NamedTemporaryFile
-# from jose import JWTError, jwt
 from passlib.hash import bcrypt
 from passlib.context import CryptContext
-from pydantic import EmailStr
+# from pydantic import EmailStr
 from config.db import conn
 from models.user import users,products
-from schemas.user import Login, User,Product
+from schemas.user import User,Product
 from sqlalchemy.sql import text
 from starlette.status import HTTP_204_NO_CONTENT
 
@@ -170,6 +166,11 @@ def read_product():
 def read_product(id):
     return conn.execute(products.select().where(products.c.id == id)).fetchall()
 
+
+# @router.get("/images/{id}")
+# def read_random_file(id):
+
+#     with open()
 
 ############      Create data    ##########
 

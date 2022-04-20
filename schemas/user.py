@@ -6,14 +6,9 @@ from typing import Optional
 class Login(BaseModel):
     email:EmailStr
     password:str
-    
-    
+     
 class User(Login):
-    name:str
-    # email:EmailStr
-    # password:str
-    # user_img:str
-    
+    name:str    
     
 class ProductImage(BaseModel):
     product_id:int
@@ -24,5 +19,4 @@ class Product(BaseModel):
     product_name:str
     price:float
     description:str
-    # user_id=int
-    
+
